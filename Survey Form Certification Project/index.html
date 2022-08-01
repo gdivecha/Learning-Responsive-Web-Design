@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Gaurav's Portfolio Survey Form</h1>
+    <main>
+      <p id="description">
+        Thank you for taking the time to fill out this form and letting me know what my portfolio does well and what it lacks
+      </p>
+      <section>
+        <form id="survey-form" >
+          <fieldset>
+            <label id="name-label">Name<input id="name" type="text" placeholder="Enter you name" required></label>
+            <label id="email-label">Email<input id="email" type="email" placeholder="Enter you email"  required></label>
+            <label id="number-label">Age(optional)<input id="number" type="number" min="7" max="120" required placeholder="Age" ></label>
+            <label>Which option best describes your current role?
+              <select id="dropdown" required>
+                <option value="student">Student</option>
+                <option value="fullTimeJob">Full time job</option>
+                <option value="fullTimeLearner">Full time learner</option>
+                <option value="preferNotToSay">Prefer not to say</option>
+                <option value="other" selected>Other</option>
+              </select>
+            </label>
+            </fieldset>
+          <fieldset>
+            <label class="newtopic">Would you recommend my profile to anyone?
+            <label>
+              <input name="selectOne" value="defo" type="radio" class="inline">Definitely
+            </label>
+            <label>
+              <input name="selectOne" value="maybe" type="radio" class="inline">Maybe
+            </label>
+            <label>
+              <input name="selectOne" value="notSure" type="radio" class="inline">Not sure
+            </label>
+            </label>
+            <label class="newtopic">What would you like to see improved?
+              <label>
+                <input class="inline" type="checkbox" value="front-end">Front-end portion of my website
+              </label>
+              <label>
+                <input class="inline" type="checkbox" value="back-end">Back-end portion of my website
+              </label>
+              <label>
+                <input class="inline" type="checkbox" value="certifications">The certifications that I am doing
+              </label>
+              <label>
+                <input class="inline" type="checkbox" value="linkedin">My LinkedIn could be better
+              </label>
+              <label>
+                <input class="inline" type="checkbox" value="linkedin">My GitHub could be better
+              </label>
+              <label>
+                <input class="inline" type="checkbox" value="social">My social presence
+              </label>
+              <label>
+                <input class="inline" type="checkbox" value="projects">The project ideas and execution
+              </label>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>Any comments?
+              <textarea id="comments" rows="5" cols="50" placeholder="This is what you could've done better ...."></textarea>
+            </label>
+          </fieldset>
+          <fieldset>
+            <button id="submit" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
